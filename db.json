@@ -1,0 +1,45 @@
+{
+  "bg": "https://cdn-ofuxico.akamaized.net/img/upload/noticias/2017/01/09/robo-1_283877_36.jpg",
+  "title": "Quiz BBB",
+  "description": "Teste os seus conhecimentos sobre a casa mais vigiada do Brasil.",
+  "questions": [
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Qual a data da primeira edição da casa mais vigiada do Brasil?",
+      "description": "Essa é pra aquecer",
+      "answer": 3,
+      "alternatives": [
+        "25 de janeiro de 2002",
+        "29 de janeiro de 2012",
+        "25 de janeiro de 2012",
+        "29 de janeiro de 2002"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Qual foi o primeiro eliminado do BBB?",
+      "description": "Faz tempo em haha",
+      "answer": 0,
+      "alternatives": [
+         "Caetano Zonaro - com 55%",
+         "Juliana Brandão - com 62%",
+         "Xaiene - com 52%",
+         "Ana Carolina Madeira - com 89%"
+      ]
+    }
+  ],
+  "external": [
+    ""
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#008394",
+      "secondary": "#f50057",
+      "mainBg": "#171B35",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  }
+}
