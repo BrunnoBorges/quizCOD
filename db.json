@@ -1,7 +1,7 @@
 {
-  "bg": "https://cdn-ofuxico.akamaized.net/img/upload/noticias/2017/01/09/robo-1_283877_36.jpg",
-  "title": "Quiz BBB",
-  "description": "Teste os seus conhecimentos sobre a casa mais vigiada do Brasil.",
+  "bg": "https://blog.br.playstation.com/tachyon/sites/4/2020/03/COD-Magma-Reveal-Trailer-Thumb_YT.jpg",
+  "title": "Quiz COD",
+  "description": "Teste os seus conhecimentos sobre o melhor jogo do ano.",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -33,7 +33,7 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#008394",
+      "primary": "#00695f",
       "secondary": "#f50057",
       "mainBg": "#171B35",
       "contrastText": "#FFFFFF",

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import logo from '../../../assets/images/logo.jpeg'
+import logo from '../../../assets/images/logoCallBlack.jpeg'
 
 import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Image = styled.img`
-    width: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 100px;
 `
 

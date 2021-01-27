@@ -16,7 +16,7 @@ import GitHubCorner from '../src/components/GitHubCorner'
 export const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
-  padding-top: 350px;
+  padding-top: 50px;
   padding-bottom: 20px;
   margin: auto 1%;
   @media screen and (max-width: 500px) {
