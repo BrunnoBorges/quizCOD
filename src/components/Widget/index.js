@@ -1,12 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
-    return theme.colors.custom;
-  }};
+  background-color: ${({ theme }) => theme.colors.custom};
   border-radius: 4px;
   overflow: hidden;
   h1, h2, h3 {
@@ -35,7 +33,7 @@ Widget.Header = styled.header`
 `;
 
 Widget.Content = styled.div`
-  padding: 24px 32px 32px 32px;
+  padding: 24px;
   & > *:first-child {
     margin-top: 0;
   }

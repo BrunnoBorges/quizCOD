@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import logo from '../../../assets/images/logoCallBlack.jpeg'
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import logo from '../../../assets/images/logoCallBlack.jpeg';
 
 export const Image = styled.img`
     width: 150px;
     height: 150px;
     border-radius: 100px;
-`
+`;
 
 function Logo() {
   return (

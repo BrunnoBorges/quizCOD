@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
@@ -7,6 +8,11 @@ const FooterWrapper = styled.footer`
   display: flex;
   align-items: center;
   border-radius: 4px; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
   img {
     width: 58px;
     margin-right: 23px;
