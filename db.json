@@ -4,27 +4,39 @@
   "description": "Teste os seus conhecimentos sobre o melhor jogo do ano.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Qual a data da primeira edição da casa mais vigiada do Brasil?",
-      "description": "Essa é pra aquecer",
-      "answer": 3,
+      "image": "https://media3.giphy.com/media/v4NQKtG6KEW8kUv08q/giphy.gif",
+      "title": "Quando foi lançado a primeira edição de Call Of Duty?",
+      "description": "Faz tempo em, haha...",
+      "answer": 2,
       "alternatives": [
-        "25 de janeiro de 2002",
-        "29 de janeiro de 2012",
-        "25 de janeiro de 2012",
-        "29 de janeiro de 2002"
+        "maio de 2003",
+        "outubro de 2002",
+        "outubro de 2003",
+        "maio de 2002"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Qual foi o primeiro eliminado do BBB?",
-      "description": "Faz tempo em haha",
-      "answer": 1,
+      "image": "https://media0.giphy.com/media/ZctnDn7l1w2VDtYyzQ/giphy.gif?cid=ecf05e471dobbtfg10dnjrj6pgewqxf3gwvbgihkuoxsnub3&rid=giphy.gif",
+      "title": "Qual jogo da franquia Call Of Duty foi considerado o pior?",
+      "description": "Essa é pra aquecer",
+      "answer": 0,
       "alternatives": [
-         "Juliana Brandão - com 62%",
-         "Caetano Zonaro - com 55%",
-         "Xaiene - com 52%",
-         "Ana Carolina Madeira - com 89%"
+         "Call of Duty: Modern Warfare",
+         "Call of Duty: Black Ops",
+         "Call of Duty: Modern Warfare 3: Defiance",
+         "Call of Duty: Ghosts"
+      ]
+    },
+    {
+      "image": "https://media1.giphy.com/media/FNC0cooGyDDvW/giphy.gif?cid=ecf05e47gy71ucmlx9lq6hyv5hpt29dv0j1dgs17njxui4fg&rid=giphy.gif",
+      "title": "Quem foi a responsavel pelo desenvolvimento do jogo Call Of Dutty?",
+      "description": "Agora começou a ficar serio",
+      "answer": 0,
+      "alternatives": [
+         "Infinity Ward",
+         "Activision",
+         "Rockstar Games",
+         "Capcom"
       ]
     }
   ],
@@ -34,7 +46,7 @@
   "theme": {
     "colors": {
       "primary": "#00695f",
-      "secondary": "#f50057",
+      "secondary": "#ef6c00",
       "mainBg": "#171B35",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",

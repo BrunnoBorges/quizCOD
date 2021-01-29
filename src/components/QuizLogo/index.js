@@ -10,15 +10,21 @@ export const Image = styled.img`
     border-radius: 100px;
 `;
 
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 function Logo() {
   return (
-    <div>
+    <Container>
       <Image src={logo} />
-    </div>
+    </Container>
   );
 }
 
 Logo.propTypes = {
+  // eslint-disable-next-line react/no-unused-prop-types
   className: PropTypes.string.isRequired,
 };
 
