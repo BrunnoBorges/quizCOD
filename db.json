@@ -1,7 +1,7 @@
 {
   "bg": "https://blog.br.playstation.com/tachyon/sites/4/2020/03/COD-Magma-Reveal-Trailer-Thumb_YT.jpg",
   "title": "Call Of Duty - Quiz",
-  "description": "Teste os seus conhecimentos sobre o melhor jogo do ano.",
+  "description": "Teste os seus conhecimentos sobre COD.",
   "questions": [
     {
       "image": "https://media3.giphy.com/media/v4NQKtG6KEW8kUv08q/giphy.gif",
@@ -30,7 +30,7 @@
     {
       "image": "https://media0.giphy.com/media/x8MiDLEd12G0Tgat1e/giphy.gif?cid=ecf05e47b1aa4e53cc0c9efbc83bd8ce65015414641685a8&rid=giphy.gif",
       "title": "Quem foi a responsavel pelo desenvolvimento do jogo Call Of Dutty?",
-      "description": "Agora começou a ficar serio",
+      "description": "Relaxe, ainda estamos aquecendo.",
       "answer": 0,
       "alternatives": [
          "Infinity Ward",
@@ -42,7 +42,7 @@
     {
       "image": "https://media1.giphy.com/media/RHjg9ue3VuTWgAGRMy/giphy.gif?cid=ecf05e47b1aa4e53cc0c9efbc83bd8ce65015414641685a8&rid=giphy.gif",
       "title": "Quando foi lançado o segundo título da franquia Call Of Dutty?",
-      "description": "Agora começou a ficar serio",
+      "description": "Prepara que agora o bicho vai pegar.",
       "answer": 2,
       "alternatives": [
          "2003",
@@ -66,7 +66,7 @@
     {
       "image": "https://media0.giphy.com/media/MFD0YqocHq1HoRZnBi/giphy.gif?cid=ecf05e47d5ca202f5363363929d55411a6a345aab4ac7992&rid=giphy.gif",
       "title": "Qual o mês e ano de lançamento da franquia Call of Duty 4: Modern Warfare?",
-      "description": "Agora começou a ficar serio",
+      "description": "Nivel Hard - Modern Warfare",
       "answer": 1,
       "alternatives": [
          "abril de 2005",
@@ -125,8 +125,10 @@
     }
   ],
   "external": [
-    "https://aluraquiz-css.omariosouto.vercel.app.br",
-    "https://aluraquiz-marvel.omariosouto.vercel.app.br"
+    "https://quiz-spiderman.elciojunior7.vercel.app",
+    "https://quiz-cavaleiro-zodiaco.vercel.app",
+    "https://quiz-dragon-ball-immersion-alura-next-js.vercel.app",
+    "https://quiz-next-js.rodrigoandradebcc.vercel.app"
   ],
   "theme": {
     "colors": {

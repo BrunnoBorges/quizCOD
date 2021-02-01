@@ -37,7 +37,7 @@ function ResultWidget({ results }) {
           {results.map((result, index) => (
             <li key={`result__${result}`}>
               <Widget.Text>
-                #
+                Pergunta
                 {index + 1}
                 {' '}
                 Resultado:
