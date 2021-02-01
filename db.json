@@ -126,9 +126,9 @@
   ],
   "external": [
     "https://quiz-spiderman.elciojunior7.vercel.app",
-    "https://quiz-cavaleiro-zodiaco.vercel.app",
-    "https://quiz-dragon-ball-immersion-alura-next-js.vercel.app",
-    "https://quiz-next-js.rodrigoandradebcc.vercel.app"
+    "https://quiz-next-js.rodrigoandradebcc.vercel.app",
+    "https://aluraquiz-marvel.omariosouto.vercel.app.br",
+    "https://aluraquiz-css.omariosouto.vercel.app.br"
   ],
   "theme": {
     "colors": {
