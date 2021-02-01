@@ -33,7 +33,7 @@ Widget.Header = styled.header`
 `;
 
 Widget.Content = styled.div`
-  padding: 24px;
+  padding: 12px;
   & > *:first-child {
     margin-top: 0;
   }
@@ -62,6 +62,48 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
+`;
+
+Widget.Text = styled.p`
+  outline: 0;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.response}`};
+  padding: 10px 15px;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  display: block;
+`;
+
+Widget.TextAlternative = styled.p`
+  outline: 0;
+  text-align: center;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.secondary}`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  display: block;
+`;
+
+Widget.Check = styled.p`
+  outline: 0;
+  text-align: center;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  display: block;
+`;
+
+Widget.Error = styled.p`
+  outline: 0;
+  text-align: center;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.secondary}`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  display: block;
 `;
 
 export default Widget;

@@ -9,7 +9,7 @@ const AlternativesForm = styled.form`
         background-color: ${({ theme }) => theme.colors.success};
       }
       &[data-status="ERROR"] {
-        background-color: ${({ theme }) => theme.colors.wrong};
+        background-color: ${({ theme }) => theme.colors.error};
       }
     }
     &:focus {

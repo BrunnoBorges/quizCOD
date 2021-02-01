@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import logo from '../../../assets/images/logoCallBlack.jpeg';
 
 export const Image = styled.img`
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 100px;
 `;
 

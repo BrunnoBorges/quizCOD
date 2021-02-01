@@ -17,9 +17,9 @@
     },
     {
       "image": "https://media0.giphy.com/media/ZctnDn7l1w2VDtYyzQ/giphy.gif?cid=ecf05e471dobbtfg10dnjrj6pgewqxf3gwvbgihkuoxsnub3&rid=giphy.gif",
-      "title": "Qual jogo da franquia Call Of Duty foi considerado o pior?",
+      "title": "Qual jogo da franquia Call Of Duty foi recordista de vendas?",
       "description": "Essa é pra aquecer",
-      "answer": 3,
+      "answer": 1,
       "alternatives": [
          "Call of Duty: Modern Warfare",
          "Call of Duty: Black Ops",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "image": "https://media1.giphy.com/media/FNC0cooGyDDvW/giphy.gif?cid=ecf05e47gy71ucmlx9lq6hyv5hpt29dv0j1dgs17njxui4fg&rid=giphy.gif",
+      "image": "https://media0.giphy.com/media/x8MiDLEd12G0Tgat1e/giphy.gif?cid=ecf05e47b1aa4e53cc0c9efbc83bd8ce65015414641685a8&rid=giphy.gif",
       "title": "Quem foi a responsavel pelo desenvolvimento do jogo Call Of Dutty?",
       "description": "Agora começou a ficar serio",
       "answer": 0,
@@ -38,10 +38,95 @@
          "Rockstar Games",
          "Capcom"
       ]
+    },
+    {
+      "image": "https://media1.giphy.com/media/RHjg9ue3VuTWgAGRMy/giphy.gif?cid=ecf05e47b1aa4e53cc0c9efbc83bd8ce65015414641685a8&rid=giphy.gif",
+      "title": "Quando foi lançado o segundo título da franquia Call Of Dutty?",
+      "description": "Agora começou a ficar serio",
+      "answer": 2,
+      "alternatives": [
+         "2003",
+         "2004",
+         "2005",
+         "2006"
+      ]
+    },
+    {
+      "image": "https://media3.giphy.com/media/Qju2yjeGXjT9TQs3bs/giphy.gif?cid=ecf05e4701312281436d665bd304f88cbd1a5f530733f361&rid=giphy.gif",
+      "title": "Quando o primeiro console a receber a franquia Call Of Dutty?",
+      "description": "Agora começou a ficar serio",
+      "answer": 0,
+      "alternatives": [
+         "Xbox 360",
+         "Xbox ONE",
+         "Playstation 3",
+         "Nintendo WII"
+      ]
+    },
+    {
+      "image": "https://media0.giphy.com/media/MFD0YqocHq1HoRZnBi/giphy.gif?cid=ecf05e47d5ca202f5363363929d55411a6a345aab4ac7992&rid=giphy.gif",
+      "title": "Qual o mês e ano de lançamento da franquia Call of Duty 4: Modern Warfare?",
+      "description": "Agora começou a ficar serio",
+      "answer": 1,
+      "alternatives": [
+         "abril de 2005",
+         "abril de 2007",
+         "junho de 2005",
+         "junho de 2007"
+      ]
+    },
+    {
+      "image": "https://media4.giphy.com/media/IeRGoZZBtTqXkRdrPu/giphy.gif?cid=ecf05e4727g5z4p25uism4foa5a3vyj7jbmeb56g52p601if&rid=giphy.gif",
+      "title": "Na campanha do jogo Call of Duty: Ghosts, quem é o personagem principal?",
+      "description": "Nivel Hard - Ghost",
+      "answer": 2,
+      "alternatives": [
+         "Hesh",
+         "Rorke",
+         "Logan",
+         "Soap"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/S6YSnqS8f7tCK2eq7Z/giphy.gif?cid=ecf05e479ae9b25c2699df614d45b1e9f3ef8b93c74109dc&rid=giphy.gif",
+      "title": "Na campanha do jogo Call of Duty: Ghosts, quem é o Vilão?",
+      "description": "Nivel Hard - Ghost",
+      "answer": 1,
+      "alternatives": [
+         "Ajax",
+         "Rorke",
+         "Almagro",
+         "Menendez"
+      ]
+    },
+    {
+      "image": "https://media0.giphy.com/media/JnAbwTpJe81pdvDFtD/giphy.gif?cid=ecf05e47dfacedaaffb4d1ebfa02724aa8d4d2e4f014c325&rid=giphy.gif",
+      "title": "Na primeira missão da campanha, Histórias de Ghosts, qual é o nome do satélite que precisamos destruir, quando estamos no espaço?",
+      "description": "Nivel Hard - Ghost",
+      "answer": 3,
+      "alternatives": [
+         "ODIN",
+         "NASA",
+         "SPACE",
+         "LOKI"
+      ]
+    },
+    {
+      "image": "https://media3.giphy.com/media/feqH23OxX3zsQ/giphy.gif?cid=ecf05e473yg2mkw63tgg3tvtmuwyj0u4dk3ca7i7zf2qgfth&rid=giphy.gif",
+      "title": "A partir da segunda missão da campanha, Admirável mundo novo, jogamos ao lado de um cachorro aliado. Qual é o nome dele?",
+      "description": "Nivel Hard - Ghost",
+      "answer": 1,
+      "alternatives": [
+         "Rufus",
+         "Riley",
+         "Brutus",
+         "Hank"
+      ]
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app.br",
+    "https://aluraquiz-marvel.omariosouto.vercel.app.br"
   ],
   "theme": {
     "colors": {
@@ -51,8 +136,10 @@
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#4CAF50",
+      "error": "#ff1744",
       "custom": "#00000070",
-      "button": "#2196f3"
+      "button": "#2196f3",
+      "response": "#3a423a"
     },
     "borderRadius": "4px"
   }

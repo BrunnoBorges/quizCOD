@@ -1,21 +1,16 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-
 import { Lottie } from '@crello/react-lottie';
+// import db from '../../../db.json';
+import Widget from '../../components/Widget';
+import QuizLogo from '../../components/QuizLogo';
+import QuizBackground from '../../components/QuizBackground';
+import QuizContainer from '../../components/QuizContainer';
+import AlternativesForm from '../../components/AlternativesForm';
+import Button from '../../components/Button';
+import BackLinkArrow from '../../components/BackLinkArrow';
 
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
-import BackLinkArrow from '../src/components/BackLinkArrow';
-
-import check from '../src/screens/Quiz/animations/checkmark.json';
-import error from '../src/screens/Quiz/animations/error-animation.json';
-import carregando from '../src/screens/Quiz/animations/carregando.json';
-
+import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results }) {
   return (
@@ -25,25 +20,30 @@ function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
-        <Widget.TextAlternative>
+        <p>
           Você acertou
           {' '}
+          {/* {results.reduce((somatoriaAtual, resultAtual) => {
+            const isAcerto = resultAtual === true;
+            if (isAcerto) {
+              return somatoriaAtual + 1;
+            }
+            return somatoriaAtual;
+          }, 0)} */}
           {results.filter((x) => x).length}
           {' '}
           perguntas
-        </Widget.TextAlternative>
+        </p>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              <Widget.Text>
-                #
-                {index + 1}
-                {' '}
-                Resultado:
-                {result === true
-                  ? 'Acertou'
-                  : 'Errou'}
-              </Widget.Text>
+              #
+              {index + 1}
+              {' '}
+              Resultado:
+              {result === true
+                ? 'Acertou'
+                : 'Errou'}
             </li>
           ))}
         </ul>
@@ -56,17 +56,16 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
+        Carregando...
+      </Widget.Header>
+
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
         <Lottie
           width="200px"
           height="200px"
-          style={{margin: "0px auto"}}
           className="lottie-container basic"
-          config={{ animationData: carregando, loop: true, autoplay: true }}
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
         />
-      </Widget.Header>
-
-      <Widget.Content>
-        Preparando armas ...
       </Widget.Content>
     </Widget>
   );
@@ -98,7 +97,7 @@ function QuestionWidget({
         alt="Descrição"
         style={{
           width: '100%',
-          height: '250px',
+          height: '150px',
           objectFit: 'cover',
         }}
         src={question.image}
@@ -153,20 +152,8 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect &&  <Lottie
-          width="100px"
-          height="100px"
-          style={{margin: "0px auto"}}
-          className="lottie-container basic"
-          config={{ animationData: check, loop: true, autoplay: true }}
-        />}
-          {isQuestionSubmited && !isCorrect &&  <Lottie
-          width="100px"
-          height="100px"
-          style={{margin: "0px auto"}}
-          className="lottie-container basic"
-          config={{ animationData: error, loop: true, autoplay: true }}
-        />}
+          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
+          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
@@ -178,13 +165,14 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
-  const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = externalQuestions[questionIndex];
+  const totalQuestions = externalQuestions.length;
+  const bg = externalBg;
 
   function addResult(result) {
     // results.push(result);
@@ -202,7 +190,7 @@ export default function QuizPage() {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 1 * 2000);
   // nasce === didMount
   }, []);
 
@@ -216,7 +204,7 @@ export default function QuizPage() {
   }
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={bg}>
       <QuizContainer>
         <QuizLogo />
         {screenState === screenStates.QUIZ && (
