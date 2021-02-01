@@ -77,7 +77,7 @@ Widget.TextAlternative = styled.p`
   outline: 0;
   text-align: center;
   color: ${({ theme }) => theme.colors.contrastText};
-  background-color: ${({ theme }) => `${theme.colors.secondary}`};
+  background-color: ${({ theme }) => `${theme.colors.primary}`};
   padding: 10px 15px;
   margin-bottom: 8px;
   border-radius: ${({ theme }) => theme.borderRadius};

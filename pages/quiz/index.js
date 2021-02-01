@@ -2,6 +2,7 @@
 import React from 'react';
 
 import { Lottie } from '@crello/react-lottie';
+import { useRouter } from 'next/router';
 
 import db from '../../db.json';
 import Widget from '../../src/components/Widget';
@@ -178,13 +179,20 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
-export default function QuizPage() {
+export default function QuizPage(
+  questions,
+  bg,
+  loadingImage
+) {
+  const router = useRouter();
+
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
   const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
+  // const totalQuestions = questions.length;
 
   function addResult(result) {
     // results.push(result);
@@ -194,16 +202,10 @@ export default function QuizPage() {
     ]);
   }
 
-  // [React chama de: Efeitos || Effects]
-  // React.useEffect
-  // atualizado === willUpdate
-  // morre === willUnmount
   React.useEffect(() => {
-    // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
-  // nasce === didMount
+    }, 4 * 1000);
   }, []);
 
   function handleSubmitQuiz() {
@@ -213,6 +215,11 @@ export default function QuizPage() {
     } else {
       setScreenState(screenStates.RESULT);
     }
+  }
+
+  function handleRestartTest(e) {
+    e.preventDefault();
+    router.push('/');
   }
 
   return (
@@ -229,9 +236,20 @@ export default function QuizPage() {
           />
         )}
 
-        {screenState === screenStates.LOADING && <LoadingWidget />}
+        {/* {screenState === screenStates.LOADING && <LoadingWidget />} */}
+        {screenState === screenStates.LOADING && <LoadingWidget loadingImage={loadingImage} />}
 
-        {screenState === screenStates.RESULT && <ResultWidget results={results} />}
+        {/* {screenState === screenStates.RESULT && <ResultWidget results={results} />} */}
+        {screenState === screenStates.RESULT && (
+          <>
+            <ResultWidget results={results} query={router.query} />
+            <form onSubmit={handleRestartTest}>
+              <Button type="submit">
+                REFAZER O TESTE
+              </Button>
+            </form>
+          </>
+        )}
       </QuizContainer>
     </QuizBackground>
   );

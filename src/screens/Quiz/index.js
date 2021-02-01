@@ -10,7 +10,7 @@ import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
-import loadingAnimation from './animations/loading.json';
+import loadingAnimation from './animations/carregando.json';
 
 function ResultWidget({ results }) {
   return (
@@ -23,13 +23,6 @@ function ResultWidget({ results }) {
         <p>
           Você acertou
           {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
           {results.filter((x) => x).length}
           {' '}
           perguntas
