@@ -31,7 +31,7 @@ function ResultWidget({ results }) {
           {' '}
           {results.filter((x) => x).length}
           {' '}
-          perguntas
+          perguntas, de um total de 10.
         </Widget.TextAlternative>
         <ul>
           {results.map((result, index) => (
